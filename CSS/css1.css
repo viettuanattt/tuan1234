@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*#myTittle {
+	color: yellow;
+} */
+h1.tittle {
+	color: blue;
+}
+.tittle {
+	color: green;
+}
+
+.tittle {
+	color: green;
+}
+input[type] {
+	border: 1px solid red;
+}
+input[type='email'] {
+	border: 1px solid blue;
+}
+input[class~='myinput']{ /* chỉ cần có*/
+	border: 1px solid pink;
+}
+input[class^='input']{
+	border: 1px solid violet;
+}
+input[class$='myinput']{
+	border: 1px solid orange;
+}
+input[class*='my']{ /*ko cần đầy đủ*/
+	border: 1px solid yellow;
+}
+input[name|='password']{
+	border: 1px solid gray;
+}
+div.content > div.box-2 > h4 {
+	color: blue;
+}
+div.content > div.box-1 + div.box-2{
+	width: 200px;
+	height: 200px;
+	border: 1px solid yellow;
+}
+div.content > div.box-1 + div.box-2 ~ div.box-3 section  + article div.text p {
+	color: green;
+}
+div.a > div.b ~ div.c + div.d div.e >div.f {
+
+}
+div.a, div.b, div.c {
+	width: 500px;
+	height: 300px;
+	background-color: black;
+}
+div.b{
+	width: 400px;
+	height: 300px;
+}

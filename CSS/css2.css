@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.container :first-child {
+    color: red /* !important */;
+}
+div.container :first-of-type{
+    color: blue;
+}
+
+div.container :last-child{
+    color: green;
+}
+div.container :last-of-type{
+    color: yellow;
+}
+div.container :nth-last-child(2) {
+    color: pink;
+}
+div.container :nth-last-of-type(2) {
+    color: violet;
+}
+div.container :nth-child(3){
+    color: orange;
+}
+
+div.container :nth-of-type(3){
+    color: gray;
+}
+div.box :only-child{
+    color: red;
+}
+div.box input[name='username']:focus {
+    border: 1px solid red;
+    width: 500px;
+    height: 25px;
+}
+div.box input[type~='checkbox']:checked, input[type~='radio']:checked {
+    width: 200px;
+    height: 200px;
+}
+div.links a:hover{
+    color: red;
+    text-decoration: none;
+}
+div.links a:active{
+    color: green;
+}
+div.links a:visited {
+    color: pink;
+}
+div.links a:link{
+    color: yellow;
+}
+div.content p::first-letter {
+    font-size: 50px;
+    color: red;
+
+}
+div.content p::first-line {
+    color: blue /* !important */;
+}
+div.content p::before{
+    /* content: url('../images/icon.png'); */
+    content: 'LPHP';
+}
+div.content p::after{
+    content: 'Javascipt';
+}
+div.content textarea[class='text']::selection{
+    color: violet;
+}
+div.content p {
+    text-indent: 80px;
+}
+div.content h3 {
+    text-shadow: green 10px 5px 2px;
+}
+
+div.background {
+    width: 800px;
+    height: 500px;
+    border-top: dotted ;
+    /* tao mau nen */
+   /*  background-color: violet; */
+    /* tao anh nen */
+    /* background-image: url('../images/icon.png'); */
+    /* quy dinh do lap cua hinh nen */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat; */
+    /* quy dinh cach hien thi cua hinh nen */
+    /* background-position: center center; */
+    /* thiet lap lai kich thuoc cua hinh nen */
+    /* background-size: 200px 300px; */
+
+    /* background-attachment: scroll */
+    background: violet url('../images/icon.png') no-repeat center center scroll;
+    background-size: cover;
+}
+
+div.background h5 {
+    /* margin-top: 50px; */
+    padding-top: 50px;
+}

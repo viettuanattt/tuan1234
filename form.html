@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Demo HTML</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!--html form-->
+	<!-- Giup gửi dữ liệu từ phía client lên server-->
+	<form action="server.php" method="POST" enctype="multipart/form-data"> <!--action: chỉ ra đường dẫn gửi dữ liệu lên server, method:chỉ ra phương thức gửi dữ liệu lên server, enctype: cho phép người dũng gửi kèm dữ liệu lên server-->
+		<!-- các thẻ html đi kèm với form-->
+		<label for="text">Nhập username</label>
+		<input type="text" name="username" value="" placeholder="Mời nhập username"> <!-- name:định danh tên gọi, giúp server có thể nhận dữ liệu người dùng gửi-->
+		<br><br>
+		<label for="pass">Password</label>
+		<input type="password" name="pass" id="pass" placeholder="Mời nhập pass" required="required" maxlength="6" minlength="2">
+		<br><br>
+		<label for="number">Tiền lương</label>
+		<input type="number" name="money" id="money" placeholder="Mời nhập money">
+		<br><br>
+		<label for="email">Nhập email</label>
+		<input type="email" name="myEmail" id="email" placeholder="Mời nhập email">
+		<br><br>
+		<label for="url">URL</label>
+		<input type="url" name="myUrl" id="url" placeholder="Mời nhập url">
+		<br><br>
+		<label for="color">Mời chọn màu</label>
+		<input type="color" name="mColor" id="color">
+		<br><br>
+		<label for="date">Mời chọn ngày</label>
+		<input type="month" name="mDate" id="date">
+		<br><br>
+		<label for="gender">Gender</label>
+		<select id="gender" name="gender">
+			<option value="1">Nam</option>
+			<option value="0">Nữ</option>
+			<option value="-1">BD</option>
+		</select>
+		<br><br>
+		<label for="checkbox">Argee</label>
+		<input type="checkbox" name="checkbox" id="checkbox" checked="checked" value="1">
+		<br><br>
+		<label for="chooseGender">Gender</label>
+		<input type="radio" name="gender" value="1" placeholder="">
+		<input type="radio" name="gender1" value="1" placeholder="">
+		<br><br>
+		<button type="button" name="click">Chọn</button>
+		<br><br>
+		<button type="submit" name="btnSub">Gửi</button>
+		<br>
+		<textarea rows="10" cols="50"></textarea>
+	</form>
+</body>
+</html>
